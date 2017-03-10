@@ -3765,14 +3765,14 @@ final Node<K,V> find(int h, Object k) {
                     ((c = (Set<?>)o) == this ||
                      (containsAll(c) && c.containsAll(this))));
         }
-
+/*
         public ConcurrentHashMapSpliterator<K> spliterator() {
             Node<K,V>[] t;
             ConcurrentHashMapV8<K,V> m = map;
             long n = m.sumCount();
             int f = (t = m.table) == null ? 0 : t.length;
             return new KeySpliterator<K,V>(t, f, 0, f, n < 0L ? 0L : n);
-        }
+        }*/
 
         public void forEach(Action<? super K> action) {
             if (action == null) throw new NullPointerException();
@@ -3828,14 +3828,14 @@ final Node<K,V> find(int h, Object k) {
         public final boolean addAll(Collection<? extends V> c) {
             throw new UnsupportedOperationException();
         }
-
+/*
         public ConcurrentHashMapSpliterator<V> spliterator() {
             Node<K,V>[] t;
             ConcurrentHashMapV8<K,V> m = map;
             long n = m.sumCount();
             int f = (t = m.table) == null ? 0 : t.length;
             return new ValueSpliterator<K,V>(t, f, 0, f, n < 0L ? 0L : n);
-        }
+        }*/
 
         public void forEach(Action<? super V> action) {
             if (action == null) throw new NullPointerException();
@@ -3923,14 +3923,14 @@ final Node<K,V> find(int h, Object k) {
                     ((c = (Set<?>)o) == this ||
                      (containsAll(c) && c.containsAll(this))));
         }
-
+/*
         public ConcurrentHashMapSpliterator<Map.Entry<K,V>> spliterator() {
             Node<K,V>[] t;
             ConcurrentHashMapV8<K,V> m = map;
             long n = m.sumCount();
             int f = (t = m.table) == null ? 0 : t.length;
             return new EntrySpliterator<K,V>(t, f, 0, f, n < 0L ? 0L : n, m);
-        }
+        }*/
 
         public void forEach(Action<? super Map.Entry<K,V>> action) {
             if (action == null) throw new NullPointerException();
